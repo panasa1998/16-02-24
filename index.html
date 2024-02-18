@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container{
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(8,50px);
+            grid-template-rows: repeat(8,50px);
+            height: 410px;
+            width: 400px;
+            background-color: aliceblue;
+            margin-left: 550px;
+            margin-top: 100px;
+            box-shadow: 10px 10px 15px 15px gray;
+        
+            
+
+        }
+        .chess1, .chess2, .chess3,.chess4, .chess5, .chess6,.chess7, .chess8{
+
+            border: 1px solid black;
+            height: 50px;
+            width: 50px;
+            box-shadow: 10px 10px 10px gray;
+        }
+        .r1,.r2,.r3,.r4,.r5,.r6,.r7,.r8{
+            display: grid;
+        }
+        .chess1:nth-child(2n){
+            background-color:black;
+        }
+        .chess2:nth-child(2n+1){
+            background-color:black;
+        }
+        .chess3:nth-child(2n){
+            background-color: black;
+        }
+        .chess4:nth-child(2n+1){
+            background-color: black;
+        }
+        .chess5:nth-child(2n){
+            background-color: black;
+        }
+        .chess6:nth-child(2n+1){
+            background-color: black;
+        }
+        .chess7:nth-child(2n){
+            background-color: black;
+        }
+        .chess8:nth-child(2n+1){
+            background-color: black;
+        }
+        i:hover{
+            background-color: transparent;
+            transform:scale(2);
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="r1">
+        <div class="chess1"><i  style="display: grid; justify-content: center; align-content:center;font-size: 40px;"   class="fa-solid fa-chess-rook"></i></div>
+        <div class="chess1"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px; color: white;"class="fa-solid fa-chess-pawn"></i></div>
+        <div class="chess1"></div>
+        <div class="chess1"></div>
+        <div class="chess1"></div>
+        <div class="chess1"></div>
+        <div class="chess1"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px; color:"class="fa-solid fa-chess-pawn"></i></div>
+        <div class="chess1"><i  style="display: grid; justify-content: center; align-content:center;font-size: 40px; color: white;"   class="fa-solid fa-chess-rook"></i></div>
+        </div>
+        <div class="r2">
+        <div class="chess2"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px; color:white" class="fa-solid fa-chess-knight"></i></div>
+        <div class="chess2"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px;"class="fa-solid fa-chess-pawn"></i></div>
+        <div class="chess2"></div>
+        <div class="chess2"></div>
+        <div class="chess2"></div>
+        <div class="chess2"></div>
+        <div class="chess2"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px; color: white;"class="fa-solid fa-chess-pawn"></i></div>
+        <div class="chess2"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px;" class="fa-solid fa-chess-knight"></i></div>
+        </div>
+        <div class="r3">
+        <div class="chess3"><i  style="display: grid; justify-content: center; align-content:center;font-size: 40px;"class="fa-solid fa-chess-bishop"></i></div>
+        <div class="chess3"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px; color: white;"class="fa-solid fa-chess-pawn"></i></div>
+        <div class="chess3"></div>
+        <div class="chess3"></div>
+        <div class="chess3"></div>
+        <div class="chess3"></div>
+        <div class="chess3"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px;"class="fa-solid fa-chess-pawn"></i></div>
+        <div class="chess3"><i  style="display: grid; justify-content: center; align-content:center;font-size: 40px; color: white;  "class="fa-solid fa-chess-bishop"></i></div>
+        </div>
+        <div class="r4">
+        <div class="chess4"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px; color: white;"class="fa-solid fa-chess-king"></i></div>
+        <div class="chess4"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px;"class="fa-solid fa-chess-pawn"></i></div>
+        <div class="chess4"></div>
+        <div class="chess4"></div>
+        <div class="chess4"></div>
+        <div class="chess4"></div>
+        <div class="chess4"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px; color: white;"class="fa-solid fa-chess-pawn"></i></div>
+        <div class="chess4"><i  style="display: grid; justify-content: center; align-content:center;font-size: 40px;"class="fa-solid fa-chess-queen"></i></div>
+        </div>
+        <div class="r5">
+        <div class="chess5"><i  style="display: grid; justify-content: center; align-content:center;font-size: 40px;"class="fa-solid fa-chess-queen"></i></div>
+        <div class="chess5"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px; color: white;"class="fa-solid fa-chess-pawn"></i></div>
+        <div class="chess5"></div>
+        <div class="chess5"></div>
+        <div class="chess5"></div>
+        <div class="chess5"></div>
+        <div class="chess5"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px;"class="fa-solid fa-chess-pawn"></i></div>
+        <div class="chess5"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px; color: white;"class="fa-solid fa-chess-king"></i></div>
+        </div>
+        <div class="r6">
+        <div class="chess6"><i  style="display: grid; justify-content: center; align-content:center;font-size: 40px; color: white;"class="fa-solid fa-chess-bishop"></i></div>
+        <div class="chess6"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px;"class="fa-solid fa-chess-pawn"></i></div>
+        <div class="chess6"></div>
+        <div class="chess6"></div>
+        <div class="chess6"></div>
+        <div class="chess6"></div>
+        <div class="chess6"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px; color: white;"class="fa-solid fa-chess-pawn"></i></div>
+        <div class="chess6"><i  style="display: grid; justify-content: center; align-content:center;font-size: 40px;"class="fa-solid fa-chess-bishop"></i></div>
+        </div>
+        <div class="r7">
+        <div class="chess7"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px;" class="fa-solid fa-chess-knight"></i></div>
+        <div class="chess7"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px; color: white;"class="fa-solid fa-chess-pawn"></i></div>
+        <div class="chess7"></div>
+        <div class="chess7"></div>
+        <div class="chess7"></div>
+        <div class="chess7"></div>
+        <div class="chess7"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px;"class="fa-solid fa-chess-pawn"></i></div>
+        <div class="chess7"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px; color: white;" class="fa-solid fa-chess-knight"></i></div>
+        </div>
+        <div class="r8">
+        <div class="chess8"><i  style="display: grid; justify-content: center; align-content:center;font-size: 40px; color: white;"   class="fa-solid fa-chess-rook"></i></div>
+        <div class="chess8"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px;"class="fa-solid fa-chess-pawn"></i></div>
+        <div class="chess8"></div>
+        <div class="chess8"></div>
+        <div class="chess8"></div>
+        <div class="chess8"></div>
+        <div class="chess8"><i style="display: grid; justify-content: center; align-content:center;font-size: 40px; color: white;"class="fa-solid fa-chess-pawn"></i></div>
+        <div class="chess8"><i  style="display: grid; justify-content: center; align-content:center;font-size: 40px; color:"   class="fa-solid fa-chess-rook"></i></div>
+        </div>
+    </div>
+</body>
+</html>
